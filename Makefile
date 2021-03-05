@@ -1,7 +1,7 @@
 SHELL=/bin/sh
 
-createproject:
-	docker-compose run app django-admin.py startproject project .
+# createproject:
+# 	docker-compose run app django-admin.py startproject project .
 
 createapp:
 	docker-compose exec app python manage.py startapp app
