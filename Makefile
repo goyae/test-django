@@ -14,9 +14,8 @@ u:
 buildup:
 	docker-compose down --volumes --remove-orphans
 	docker-compose up -d --build
-	docker-compose exec web sleep 5
+	docker-compose exec app sleep 5
 	docker-compose exec app python manage.py check
-	docker-compose exec app python manage.py makemigrations
 	docker-compose exec app python manage.py migrate
 	-docker-compose logs -f
 
