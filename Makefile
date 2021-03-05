@@ -3,8 +3,8 @@ SHELL=/bin/sh
 # createproject:
 # 	docker-compose run app django-admin.py startproject project .
 
-createapp:
-	docker-compose exec app python manage.py startapp app
+# createapp:
+# 	docker-compose exec app python manage.py startapp app
 
 up:
 	-docker-compose up
