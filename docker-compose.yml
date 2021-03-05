@@ -25,7 +25,7 @@ services:
       - .env
     ports:
       - "18081:8000"
-    # entrypoint: python manage.py runserver 0.0.0.0:8000
+    entrypoint: python manage.py runserver 0.0.0.0:8000
 
 volumes:
   db-data:
